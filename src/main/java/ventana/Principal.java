@@ -14,7 +14,17 @@ public class Principal {
     public static void main(String[] args) {
       Ventana v1 = new Ventana();
       v1.setVisible(true); //Visible ventana
+      
+      Ventana2 v2 = new Ventana2();
+      v2.setVisible(true); //Visible ventana
+      
+      Ventana3 v3 = new Ventana3();
+      v3.setVisible(true); //Visible ventana
+    
+       Ventana4 v4 = new Ventana4();
+      v4.setVisible(true); //Visible ventana
     }
+    
     
 }
     

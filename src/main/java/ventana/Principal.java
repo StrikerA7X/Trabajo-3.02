@@ -23,6 +23,9 @@ public class Principal {
     
        Ventana4 v4 = new Ventana4();
       v4.setVisible(true); //Visible ventana
+      
+       Ventana5 v5 = new Ventana5();
+      v5.setVisible(true); //Visible ventana
     }
     
     

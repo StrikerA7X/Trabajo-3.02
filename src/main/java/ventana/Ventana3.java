@@ -6,6 +6,7 @@ package ventana;
 
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -38,6 +39,10 @@ public class Ventana3 extends JFrame{
         colocarPaneles();
     
         colocarEtiquetas();
+        
+        colocarListasDesplegables();
+        
+        colocarBotones();
            
         
     }
@@ -61,7 +66,7 @@ public class Ventana3 extends JFrame{
          //Etiqueta 1
         JLabel etiqueta = new JLabel("Periodo Academico:",SwingConstants.LEFT);//Crear etiqueta
         //etiqueta.setText("Inscribete");
-        etiqueta.setBounds(0, 80, 500, 50);
+        etiqueta.setBounds(0, 80, 150, 50);
         etiqueta.setForeground(Color.BLACK);
         etiqueta.setOpaque(true); //Establecer el fondo para pintar
     
@@ -125,33 +130,87 @@ public class Ventana3 extends JFrame{
         panel.add(etiqueta6);
         
               //Etiqueta 7
-          JLabel etiqueta7 = new JLabel(" 29/04/2022:",SwingConstants.RIGHT);//Crear etiqueta
+          JLabel etiqueta7 = new JLabel(" 29/04/2022",SwingConstants.RIGHT);//Crear etiqueta
         //etiqueta.setText("Inscribete");
-        etiqueta7.setBounds(0, 420, 150, 50);
+        etiqueta7.setBounds(200, 420, 150, 50);
         etiqueta7.setForeground(Color.BLACK);
         etiqueta7.setOpaque(true); //Establecer el fondo para pintar
         etiqueta7.setFont(new Font("verdana",1,10)); //Tipo de fuente
         panel.add(etiqueta7);
   
+          //Etiqueta 8
+          JLabel etiqueta8 = new JLabel(" 2022-2022",SwingConstants.RIGHT);//Crear etiqueta
+        //etiqueta.setText("Inscribete");
+        etiqueta8.setBounds(200, 80, 150, 50);
+        etiqueta8.setForeground(Color.BLACK);
+        etiqueta8.setOpaque(true); //Establecer el fondo para pintar
+        etiqueta8.setFont(new Font("verdana",1,10)); //Tipo de fuente
+        panel.add(etiqueta8);
+  
+        
         }
         
-         private void colocarListasDesplegables(){
-       
-        JComboBox listaDesplegable = new JComboBox();
-        listaDesplegable.setBounds(200, 60, 200, 30);
         
-         listaDesplegable.addItem("Matriz Cuenca");
-         listaDesplegable.addItem("Matriz Guayaquil");
-          listaDesplegable.addItem("Matriz Quito");
-          listaDesplegable.setSelectedItem("Matriz Cuenca");//Seleccionar
+        private void colocarListasDesplegables(){
+       
+        
+      
+    
+        JComboBox listaDesplegable = new JComboBox();
+        listaDesplegable.setBounds(200, 130, 200, 30);
+        
+         listaDesplegable.addItem("Arquitectura");
+         listaDesplegable.addItem("Telecomunicaciones");
+          listaDesplegable.addItem("Mecatronica");
+          listaDesplegable.setSelectedItem("Arquitectura");//Seleccionar
          panel.add(listaDesplegable);
          
          JComboBox listaDesplegable2 = new JComboBox();
-        listaDesplegable2.setBounds(200, 100, 200, 30);
+        listaDesplegable2.setBounds(200, 180, 200, 30);
         
-         listaDesplegable2.addItem("Cedula");
-         listaDesplegable2.addItem("Pasaporte");
-          listaDesplegable2.setSelectedItem("Cedula");//Seleccionar
+         listaDesplegable2.addItem("Presencial");
+         listaDesplegable2.addItem("Virtual");
+          listaDesplegable2.setSelectedItem("Presencial");//Seleccionar
          panel.add(listaDesplegable2);
+         
+           JComboBox listaDesplegable3 = new JComboBox();
+        listaDesplegable3.setBounds(200, 240, 200, 30);
+        
+         listaDesplegable3.addItem("Matriz Cuenca");
+         listaDesplegable3.addItem("Matriz Guayaquil");
+         listaDesplegable3.addItem("Matriz Quito");
+          listaDesplegable3.setSelectedItem("Matriz Cuenca");//Seleccionar
+         panel.add(listaDesplegable3);
+         
+         
+          JComboBox listaDesplegable4 = new JComboBox();
+        listaDesplegable4.setBounds(200, 300, 200, 30);
+        
+         listaDesplegable4.addItem("El vecino");
+          listaDesplegable4.setSelectedItem("El Vecino");//Seleccionar
+         panel.add(listaDesplegable4);
+         
+         
+         JComboBox listaDesplegable5 = new JComboBox();
+        listaDesplegable5.setBounds(200, 360, 200, 30);
+        
+         listaDesplegable5.addItem("Diurna");
+         listaDesplegable5.addItem("Nocturna");
+          listaDesplegable5.setSelectedItem("Diurna");//Seleccionar
+         panel.add(listaDesplegable5);
+         
+         JComboBox listaDesplegable6 = new JComboBox();
+        listaDesplegable6.setBounds(200, 420, 200, 30);
+        
+        
+        
+          }
+private void colocarBotones(){
+          JButton boton1 = new JButton("Siguiente");
+          boton1.setBounds(350, 500, 100, 40);
+          panel.add(boton1);
+          boton1.setForeground(Color.BLACK);
+          boton1.setFont(new Font("verdana",Font.BOLD,12));//FUENTE LETRA BOTON
+          
 }
 }
